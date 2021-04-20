@@ -578,3 +578,95 @@ footer i{
 .fusion:hover .bloc_slide_left .rotate-center {
     transform: rotate(0);
 }
+
+
+
+
+
+
+
+// DESKTOP
+
+
+@media (min-width: 1025px){
+    body{
+        margin: 0 270px 0 270px;
+    }
+
+    h1{
+        font-size: 70px;
+    }
+
+    .localisation{
+        width: 313px;
+        position: relative;
+        top: 73px;
+        left: 623px;
+        border-radius: 108px;
+    }
+
+    .section2{
+        border-radius: 150px;
+        background-color: #9356dc;
+        color:#fff;
+        padding-top: 70px;
+    }
+
+    .section2 button{
+        margin: 20px 0 50px 0;
+        width: 313px;
+        height: 69px;
+        font-size: 20px;
+    }
+
+    .section2 h2{
+        padding-top: 40px;
+    }
+
+    .section2 p {
+        font-size: 22px;
+        color:#fff;
+    }
+
+    .fonction{
+        background-color: #f5edff;
+        padding-right: 80px;
+        padding-left: 80px;
+        font-size: 20px;
+    }
+
+    .one{
+        width: 30px;
+        height: 30px;
+        left: 1332px;
+    }
+
+    .section3{
+        margin: 70px 20px 36px 35px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section3 h2{
+        display: none;
+    }
+
+    .section4{
+        // background-color: #fff;
+        display: flex;
+    // flex-wrap: wrap;
+    
+    }
+
+    .card{
+        width: 600px;
+        
+    }
+
+    .section4 h2{
+        position: relative;
+        bottom: 66px;
+        left: 692px;
+    }
+
+}
