@@ -22,6 +22,11 @@
   font-weight: 700;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -159,6 +164,10 @@ h1 {
   border-radius: 20px 20px 20px 20px;
 }
 
+.image1 {
+  position: relative;
+}
+
 .image1 img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -174,7 +183,7 @@ h1 {
   border-radius: 4px;
   font-size: 15px;
   position: absolute;
-  right: 40px;
+  right: 15px;
   padding: 10px 16px 10px 16px;
 }
 
@@ -627,24 +636,30 @@ footer i {
 }
 
 @media (min-width: 1025px) {
-  body {
-    margin: 0 270px 0 270px;
-  }
   h1 {
     font-size: 70px;
+    margin-bottom: 60px;
   }
   .localisation {
-    width: 313px;
-    position: relative;
-    top: 73px;
-    left: 623px;
     border-radius: 108px;
+    margin-bottom: 30px;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
   }
   .section2 {
-    border-radius: 150px;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     background-color: #9356dc;
     color: #fff;
-    padding-top: 70px;
+    padding-top: 20px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
   }
   .section2 button {
     margin: 20px 0 50px 0;
@@ -661,8 +676,6 @@ footer i {
   }
   .fonction {
     background-color: #f5edff;
-    padding-right: 80px;
-    padding-left: 80px;
     font-size: 20px;
   }
   .one {
@@ -677,21 +690,61 @@ footer i {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    max-width: 1400px;
+    margin: 0 auto;
   }
   .section3 h2 {
     display: none;
   }
+  .one {
+    position: unset;
+  }
   .section4 {
+    background-color: unset;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 700px;
+    padding: 0;
+  }
+  .nouveau {
+    position: absolute;
   }
   .card {
-    width: 600px;
+    width: calc(( 100% - 100px ) / 2);
   }
   .section4 h2 {
-    position: relative;
-    bottom: 66px;
-    left: 692px;
+    display: none;
+  }
+  .coeur {
+    font-size: 32px;
+  }
+  footer {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+  }
+  footer h1 {
+    text-align: center;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-right: 60px;
   }
 }
