@@ -498,7 +498,7 @@ footer i {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 35px 0 20px;
+  padding: 10px 20px 0 20px;
 }
 
 .menu i {
@@ -511,7 +511,7 @@ footer i {
   margin-left: 9px;
   margin-bottom: 0px;
   font-family: Shrikland;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .fusion {
