@@ -77,15 +77,6 @@ body {
   transition: all .4s linear;
 }
 
-@keyframes slide-left {
-  0% {
-    margin-right: -80px;
-  }
-  100% {
-    margin-right: 0;
-  }
-}
-
 .rotate-center {
   transform: rotate(-240deg);
   transition: all 500ms;
@@ -97,14 +88,14 @@ body {
 
 .animation {
   position: fixed;
-  transform: scale(2);
+  transform: scale(1.5);
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
   animation: disapear 3s linear both;
 }
 
@@ -112,9 +103,7 @@ body {
   display: flex;
   font-family: Shrikland, sans-serif;
   color: #9356DC;
-  border: 5px solid #3df1f1;
-  border-radius: 50%;
-  animation: tiltSpin 8s linear infinite;
+  animation: tiltSpin 8s linear;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -314,6 +303,11 @@ h1 {
   font-size: 15px;
   margin: 10px 0 50px 0;
   cursor: pointer;
+}
+
+.section2 button:hover {
+  background: linear-gradient(353deg, #9356dc 0%, #ff79da 50%);
+  box-shadow: 0px 5px 15px 0px rgba(10, 10, 10, 0.7);
 }
 
 .section3 {
@@ -679,7 +673,7 @@ footer i {
   color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .animation {
     transform: scale(2);
   }
@@ -714,10 +708,6 @@ footer i {
     width: 313px;
     height: 69px;
     font-size: 20px;
-  }
-  .section2 button:hover {
-    background: linear-gradient(353deg, #9356dc 0%, #ff79da 50%);
-    box-shadow: 0px 5px 15px 0px rgba(10, 10, 10, 0.7);
   }
   .section2 h2 {
     padding-top: 40px;
@@ -864,6 +854,21 @@ footer i {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .animation {
     transform: scale(2);
+  }
+  .section2 {
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #9356dc;
+    color: #fff;
+    padding-top: 20px;
+    padding: 20px 0 0 0;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
   }
   .one {
     position: absolute;
