@@ -40,11 +40,6 @@ body {
   color: #838383;
 }
 
-.coeur:hover .far {
-  height: 0;
-  transition: all .4s linear;
-}
-
 .coeur:hover {
   color: rgba(147, 86, 220, 0);
 }
@@ -57,6 +52,12 @@ body {
   background-color: #fff;
   font-size: 32px;
   z-index: 100;
+  transition: all .4s linear;
+}
+
+.coeur:hover .far {
+  height: 0;
+  visibility: hidden;
   transition: all .4s linear;
 }
 
@@ -429,7 +430,8 @@ footer {
   padding: 0 30px 20px;
 }
 
-footer h1 {
+footer h4 {
+  font-family: Shrikland;
   font-size: 21px;
   font-weight: 100;
   padding-top: 30px;
@@ -781,7 +783,7 @@ footer i {
     border-top-right-radius: 100%;
     border-top-left-radius: 100%;
   }
-  footer h1 {
+  footer h4 {
     text-align: center;
   }
   footer ul {

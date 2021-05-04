@@ -41,11 +41,6 @@ body{
     color: #838383;
   }
   
-  .coeur:hover .far{
-    height: 0;
-    transition: all .4s linear;
-  }
-  
   .coeur:hover {
     color: rgba(147,86,220, 0);
   }
@@ -58,6 +53,12 @@ body{
     background-color: #fff;
     font-size: 32px;
     z-index: 100;
+    transition: all .4s linear;
+  }
+
+  .coeur:hover .far{
+    height: 0;
+    visibility: hidden;
     transition: all .4s linear;
   }
 
@@ -78,18 +79,7 @@ body{
     transition: all .4s linear;
   }
 
-
-// ANIMATION CHECK VERT
-//   @keyframes slide-left {
-//     0% {
-//         margin-right: -80px;
-//     }
-//     100% {
-//         margin-right: 0;
-//     }
-//   }
   
-
 // ROTATION CIRCLE
 .rotate-center {
     transform: rotate(-240deg);
@@ -98,7 +88,6 @@ body{
 .fusion:hover .bloc_slide_left .rotate-center {
     transform: rotate(0);
 }
-
 
 
 // ANIMATION LOADER
@@ -435,13 +424,6 @@ h1{
             margin-top: 5px;
         }
 
-
-// .coeur{
-//     font-size: 26px;
-//     padding-right: 15px;
-//     color: #838383;
-// }
-
 footer{
     background-color: #353535;
     color: #ffffff;
@@ -449,7 +431,8 @@ footer{
     padding: 0 30px 20px;
 }
 
-    footer h1{
+    footer h4{
+        font-family: Shrikland;
         font-size: 21px;
         font-weight: 100;
         padding-top: 30px;
@@ -493,7 +476,6 @@ footer{
         position: absolute;
         left: 25px;
         font-size: 20px;
-        // margin-top: -6px;
         color: #686868;
     }
 
@@ -749,11 +731,6 @@ footer{
             font-size: 20px;
         }
 
-        // .section2 button:hover{
-        //     background: linear-gradient(353deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 50%);
-        //     box-shadow: 0px 5px 15px 0px rgba(10,10,10,0.7);
-        // }
-
             .section2 h2{
                 padding-top: 40px;
             }
@@ -826,10 +803,6 @@ footer{
      display: none;
     }
 
-    // .coeur{
-    //     font-size: 32px;
-    // }
-
     .commander{
         width: 350px;
         height: 95px;
@@ -845,7 +818,7 @@ footer{
         border-top-left-radius: 100%;
     }
 
-    footer h1{
+    footer h4{
         text-align: center;
     }
 
@@ -939,8 +912,6 @@ footer{
     }
 
 }
-
-
 
 
 //                                                                  RESPONSIVE TABLETTE
